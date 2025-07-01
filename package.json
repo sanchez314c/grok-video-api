@@ -1,0 +1,61 @@
+{
+  "name": "grok-video-api",
+  "version": "0.1.1",
+  "description": "Grok Video Continuity Pipeline — coherent multi-clip AI video generation via xAI Aurora",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "bin": {
+    "grok-video": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/cli.ts",
+    "dev": "tsx src/cli.ts",
+    "pipeline": "tsx src/cli.ts pipeline",
+    "generate": "tsx src/cli.ts generate",
+    "image": "tsx src/cli.ts image",
+    "status": "tsx src/cli.ts status",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "xai",
+    "grok",
+    "video",
+    "ai",
+    "generation",
+    "aurora",
+    "continuity",
+    "multi-clip"
+  ],
+  "author": "J. Michaels <sanchez314c@github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanchez314c/grok-video-api"
+  },
+  "bugs": {
+    "url": "https://github.com/sanchez314c/grok-video-api/issues"
+  },
+  "homepage": "https://github.com/sanchez314c/grok-video-api#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,13 @@
+src/
+output/
+test-output/
+.env
+.env.*
+*.ts
+!*.d.ts
+tsconfig.json
+PIPELINE.md
+NEXT-PHASE.md
+node_modules/
+.git/
+.gitignore
